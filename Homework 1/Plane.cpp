@@ -4,6 +4,7 @@
 # include <string>
 # include <algorithm>
 # include "Plane.h"
+# include "Pilot.h"
 
 // Plane Methods
 double Plane::getPos() {
@@ -83,17 +84,23 @@ void Plane::operate(double dt) {
         at_SCE = false; // Plane is not at SCE if it's still in transit
     }
     else {
-        // If the destination is SCE, mark the plane as at SCE
         if (destination == "SCE") {
             at_SCE = true;
         }
         else {
-            at_SCE = false; // Otherwise, it's not at SCE
+            at_SCE = false;
         }
-        // Swap origin and destination
         std::swap(origin, destination);
-        // Reset position for the next leg
         pos = 0.0;
     }
 }
 
+void Plane::setPilotInControl(Pilot* pilot) {
+    pilotInControl = pilot;
+    std::cout << "The pilot " << pilotInControl->getName() << " with certificate number " << &(pilotInControl->getName())
+        << " is now in control of the plane: " << this << std::endl;
+}
+
+void Plane::resetForNextLeg() {
+    this->pos = 0;
+}

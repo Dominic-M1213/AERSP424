@@ -2,7 +2,7 @@
 #define PILOT
 
 # include <string>
-# include "Plane.h"
+class Plane;
 
 class Pilot
 {
@@ -16,6 +16,7 @@ public:
 
 	std::string getName() const;
 	void setMyPlane(Plane* plane);
+	void takeControl();
 };
 
 #endif

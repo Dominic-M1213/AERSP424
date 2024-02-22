@@ -3,6 +3,7 @@
 
 # include <string>
 # include "FlightMap.h"
+# include "Pilot.h"
 
 class Plane
 {
@@ -14,6 +15,7 @@ private:
 	std::string origin;
 	std::string destination;
 	FlightMap flightMap;
+	Pilot* pilotInControl;
 
 public:
 	Plane(std::string from, std::string to);
@@ -28,6 +30,7 @@ public:
 	double getVel();
 	void setVel(double vel);
 	
-
+	void setPilotInControl(Pilot* Pilot);
+	void resetForNextLeg();
 };
 #endif

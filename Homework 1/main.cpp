@@ -31,19 +31,49 @@ int main() {
 	std::cout << "AERSP424: Homework 1" << std::endl;
 	// Set Use a decimal precision of 0.01 lbs
 	std::cout << std::fixed << std::showpoint << std::setprecision(2);
-	//makePlane myBuiltPlane;
-	Plane myPlane("SCE","PHL");
-	myPlane.setVel(400);
+    makePlane myBuiltPlane;
+    // Create plane and pilots
+    Plane myPlane("SCE", "PHL");
+    myPlane.setVel(400); // Assuming velocity is in miles per hour
 
-	double timestep = 15;
-	int max_iter = 95;
+    Pilot pilotAlpha("Alpha");
+    Pilot pilotBravo("Bravo");
 
-	for (int i = 0; i <= max_iter; i++) {
-		int time = timestep * i;
-		myPlane.operate(timestep);
-		std::cout << "Time: " << formatTime(time)
-			<< "	Position: " << myPlane.getPos() << std::endl;
-	}
+    // Assign the plane to the pilots
+    pilotAlpha.setMyPlane(&myPlane);
+    pilotBravo.setMyPlane(&myPlane);
+
+    // Simulation parameters
+    int timestep = 9;
+    int max_iter = 2000;
+    bool isAlphaPilot = true;
+
+    // Start the simulation
+    for (int i = 0; i <= max_iter; i++) {
+        int time = timestep * i;
+
+        if (myPlane.getAt_SCE()) {
+            std::cout << "\nThe plane " << &myPlane << " is at SCE." << std::endl;
+            // Switch pilot
+            if (isAlphaPilot) {
+                std::cout << "Pilot " << pilotAlpha.getName() << " with certificate number " << &pilotAlpha
+                    << " is in control of a plane: " << &myPlane << std::endl;
+                //pilotAlpha.takeControl();
+            }
+            else {
+                std::cout << "Pilot " << pilotBravo.getName() << " with certificate number " << &pilotAlpha
+                    << " is in control of a plane: " << &myPlane << std::endl;
+                //pilotBravo.takeControl();
+            }
+            isAlphaPilot = !isAlphaPilot; // Toggle the pilot control
+            myPlane.resetForNextLeg(); // Reset plane's position for the next leg
+        }
+
+        // Operate the plane
+        myPlane.operate(timestep);
+        //std::cout << "Time: " << formatTime(time) << " seconds. "
+            //<< "Position: " << myPlane.getPos() << " miles." << std::endl;
+    }
 
 	return 0;
 }
