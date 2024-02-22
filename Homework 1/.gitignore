@@ -1,0 +1,17 @@
+# Ignore build output directory
+build/
+
+# Ignore Visual Studio temporary files and build results
+.vs/
+*.opendb
+*.sdf
+*.cachefile
+*.db
+
+# Ignore other files that are not needed
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
