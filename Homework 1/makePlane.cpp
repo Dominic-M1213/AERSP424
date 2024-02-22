@@ -124,7 +124,7 @@ makePlane::makePlane() {
 
 }
 makePlane::~makePlane() {
-    std::cout << "\nBuilt Plane Destoryed." << std::endl;
+    std::cout << "\nBuilt Plane Destroyed" << std::endl;
 }
 
 void makePlane::setEmptyWeight(double weight, double moment) {

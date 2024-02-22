@@ -2,6 +2,7 @@
 #define PLANE
 
 # include <string>
+# include <memory>
 # include "FlightMap.h"
 # include "Pilot.h"
 
@@ -29,8 +30,6 @@ public:
 	bool getAt_SCE();
 	double getVel();
 	void setVel(double vel);
-	
-	void setPilotInControl(Pilot* Pilot);
 	void resetForNextLeg();
 };
 #endif

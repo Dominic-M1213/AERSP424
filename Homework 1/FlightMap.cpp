@@ -5,7 +5,7 @@ FlightMap::FlightMap() {
     std::cout << "\nFlight Map Created" << std::endl;
 }
 FlightMap::~FlightMap() {
-    std::cout << "\nFlight Map Destoryed" << std::endl;
+    std::cout << "\nFlight Map Destroyed" << std::endl;
 }
 
 void FlightMap::addFlight(const std::string& source, const std::string& destination, int distance) {

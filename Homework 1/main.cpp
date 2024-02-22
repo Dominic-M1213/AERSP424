@@ -31,39 +31,75 @@ int main() {
 	std::cout << "AERSP424: Homework 1" << std::endl;
 	// Set Use a decimal precision of 0.01 lbs
 	std::cout << std::fixed << std::showpoint << std::setprecision(2);
+
+    // --------- 1 ---------
+    std::cout << "\n\n# BEGIN ================ Q1 ================ BEGIN #" << std::endl;
     makePlane myBuiltPlane;
+    myBuiltPlane.~makePlane();
+    std::cout << "# END ================ Q1 ================ END #\n\n" << std::endl;
+    
+    
+    // --------- 2,3,4,5 ---------
+    std::cout << "\n\n# BEGIN ================ Q2,3,4,5 ================ BEGIN #" << std::endl;
     // Create plane and pilots
     Plane myPlane("SCE", "PHL");
     myPlane.setVel(400); // Assuming velocity is in miles per hour
+    // Simulation parameters
+    int timestep = 14;
+    int max_iter = 1000;
 
+    // Start the simulation
+    for (int i = 0; i <= max_iter; i++) {
+        int time = timestep * i;
+
+        // Operate the plane
+        myPlane.operate(timestep);
+        std::cout << "Time: " << formatTime(time) << " seconds. "
+            << "Position: " << myPlane.getPos() << " miles." << std::endl;
+    }
+    std::cout << "# END ================ Q2,3,4,5 ================ END #\n\n" << std::endl;
+
+    // --------- 6 ---------
+    std::cout << "\n\n# BEGIN ================ Q6 ================ BEGIN #" << std::endl;
     Pilot pilotAlpha("Alpha");
     Pilot pilotBravo("Bravo");
 
     // Assign the plane to the pilots
     pilotAlpha.setMyPlane(&myPlane);
-    pilotBravo.setMyPlane(&myPlane);
+    pilotBravo.setMyPlane(nullptr);
 
+    std::cout << "\n\n# END ================ Q6 ================ END #" << std::endl;
+    
+    
+    // --------- 7 --------
+    std::cout << "\n\n# BEGIN ================ Q7 ================ BEGIN #" << std::endl;
     // Simulation parameters
-    int timestep = 9;
-    int max_iter = 2000;
+    timestep = 9;
+    max_iter = 2000;
     bool isAlphaPilot = true;
-
     // Start the simulation
-    for (int i = 0; i <= max_iter; i++) {
+    for (int  i = 0; i <= max_iter; i++) {
         int time = timestep * i;
 
         if (myPlane.getAt_SCE()) {
             std::cout << "\nThe plane " << &myPlane << " is at SCE." << std::endl;
             // Switch pilot
             if (isAlphaPilot) {
+                pilotAlpha.setMyPlane(&myPlane);
+                pilotBravo.setMyPlane(nullptr);
                 std::cout << "Pilot " << pilotAlpha.getName() << " with certificate number " << &pilotAlpha
-                    << " is in control of a plane: " << &myPlane << std::endl;
-                //pilotAlpha.takeControl();
+                    << " is in control of a plane: " << pilotAlpha.getMyPlane() << std::endl;
+                std::cout << "Pilot " << pilotBravo.getName() << " with certificate number " << &pilotBravo
+                    << " is in control of a plane: " << pilotBravo.getMyPlane() << std::endl;
+    
             }
             else {
-                std::cout << "Pilot " << pilotBravo.getName() << " with certificate number " << &pilotAlpha
-                    << " is in control of a plane: " << &myPlane << std::endl;
-                //pilotBravo.takeControl();
+                pilotAlpha.setMyPlane(nullptr);
+                pilotBravo.setMyPlane(&myPlane);
+                std::cout << "Pilot " << pilotAlpha.getName() << " with certificate number " << &pilotAlpha
+                    << " is in control of a plane: " << pilotAlpha.getMyPlane() << std::endl;
+                std::cout << "Pilot " << pilotBravo.getName() << " with certificate number " << &pilotBravo
+                    << " is in control of a plane: " << pilotBravo.getMyPlane() << std::endl;
             }
             isAlphaPilot = !isAlphaPilot; // Toggle the pilot control
             myPlane.resetForNextLeg(); // Reset plane's position for the next leg
@@ -71,9 +107,9 @@ int main() {
 
         // Operate the plane
         myPlane.operate(timestep);
-        //std::cout << "Time: " << formatTime(time) << " seconds. "
-            //<< "Position: " << myPlane.getPos() << " miles." << std::endl;
     }
+
+    std::cout << "\n\n# END ================ Q7 ================ END #" << std::endl;
 
 	return 0;
 }

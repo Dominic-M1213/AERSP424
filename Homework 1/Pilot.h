@@ -16,7 +16,7 @@ public:
 
 	std::string getName() const;
 	void setMyPlane(Plane* plane);
-	void takeControl();
+	Plane *Pilot::getMyPlane() const;
 };
 
 #endif

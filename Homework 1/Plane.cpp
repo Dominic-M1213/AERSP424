@@ -95,11 +95,6 @@ void Plane::operate(double dt) {
     }
 }
 
-void Plane::setPilotInControl(Pilot* pilot) {
-    pilotInControl = pilot;
-    std::cout << "The pilot " << pilotInControl->getName() << " with certificate number " << &(pilotInControl->getName())
-        << " is now in control of the plane: " << this << std::endl;
-}
 
 void Plane::resetForNextLeg() {
     this->pos = 0;
