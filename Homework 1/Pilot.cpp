@@ -23,6 +23,6 @@ void Pilot::setMyPlane(Plane* plane) {
     this->myPlane = plane;
 }
 
-Plane *Pilot::getMyPlane() const{
+Plane* Pilot::getMyPlane() const {
     return myPlane;
 }

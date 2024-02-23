@@ -1,13 +1,14 @@
-#ifndef PLANE // include guard
-#define PLANE
+#ifndef PLANE_MODCPP // include guard
+#define PLANE_MODCPP
 
 # include <string>
+# include <memory>
 # include "FlightMap.h"
-# include "Pilot.h"
+# include "Pilot_ModCPP.h"
 
-class Plane
+class Plane_ModCPP
 {
-private: 
+private:
 	double pos;
 	double vel;
 	double distance;
@@ -15,11 +16,11 @@ private:
 	std::string origin;
 	std::string destination;
 	FlightMap flightMap;
-	Pilot* pilotInControl;
+	std::unique_ptr<Pilot_ModCPP> pilotInControl;
 
 public:
-	Plane(std::string from, std::string to);
-	~Plane();
+	Plane_ModCPP(std::string from, std::string to);
+	~Plane_ModCPP();
 
 	// existing methods
 	void operate(double dt);

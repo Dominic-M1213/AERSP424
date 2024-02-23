@@ -19,6 +19,7 @@ public:
 
 class makePlane
 {
+
 private:
 	double emptyWeight; // lbs
 	double emptyWeightMoment; // lbs-inches

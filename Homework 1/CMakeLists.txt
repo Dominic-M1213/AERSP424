@@ -6,5 +6,7 @@ add_executable(Homework_1 ${CMAKE_SOURCE_DIR}/
 main.cpp 
 Pilot.cpp Pilot.h 
 Plane.cpp Plane.h
+Pilot_ModCPP.cpp Pilot_ModCPP.h 
+Plane_ModCPP.cpp Plane_ModCPP.h
 makePlane.cpp makePlane.h
 FlightMap.cpp FlightMap.h)
