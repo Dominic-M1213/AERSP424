@@ -1,0 +1,29 @@
+﻿  main.cpp
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(27,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(27,18): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(27,13): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(34,18): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(34,13): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(37,21): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(38,20): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(39,20): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(39,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(42,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(42,18): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(42,13): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(45,21): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(45,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(48,19): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(48,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(49,20): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(49,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(50,20): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(50,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(56,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(56,18): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(56,13): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(60,17): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(60,14): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(63,48): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\main.cpp(63,8): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  OpenGLExample.vcxproj -> C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\OpenGL\build\Debug\OpenGLExample.exe

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate"
+		},
+		{
+			"file" : "C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glfw-subbuild/CMakeFiles/a3b0fb884afd111826b4b1d58c80aef6/glfw-populate.rule"
+		},
+		{
+			"file" : "C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glfw-subbuild/CMakeFiles/7bbfa6d4cf9af7174660a7edf8f16511/glfw-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glfw-subbuild/CMakeFiles/c434f0783a6bdeef3027f829327cb67f/glfw-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glfw-subbuild/CMakeFiles/c434f0783a6bdeef3027f829327cb67f/glfw-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glfw-subbuild/CMakeFiles/c434f0783a6bdeef3027f829327cb67f/glfw-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glfw-subbuild/CMakeFiles/c434f0783a6bdeef3027f829327cb67f/glfw-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glfw-subbuild/CMakeFiles/c434f0783a6bdeef3027f829327cb67f/glfw-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glfw-subbuild/CMakeFiles/c434f0783a6bdeef3027f829327cb67f/glfw-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glfw-subbuild/CMakeFiles/c434f0783a6bdeef3027f829327cb67f/glfw-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glfw-subbuild/CMakeFiles/c434f0783a6bdeef3027f829327cb67f/glfw-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glfw-populate"
+		],
+		"name" : "glfw-populate"
+	}
+}

@@ -1,0 +1,10 @@
+^C:\USERS\DOMMA\ONEDRIVE - THE PENNSYLVANIA STATE UNIVERSITY\DOCUMENTS\CLASSES\AERSP 424\CREATINGLIBRARY\BUILD\CMAKEFILES\01BB5B427AA03E6C0CE40D466FCDE1D6\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/CreatingLibrary" "-BC:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/CreatingLibrary/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/CreatingLibrary/build/static_lib_example.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,3 @@
+C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/CreatingLibrary/build/CMakeFiles/static_lib_example.dir
+C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/CreatingLibrary/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/CreatingLibrary/build/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\Note 3_14\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\domma\OneDrive - The Pennsylvania State University\Documents\Classes\AERSP 424\Note 3_14\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{530DC9F0-E33A-34B2-84C5-45B299999658}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^C:\USERS\DOMMA\ONEDRIVE - THE PENNSYLVANIA STATE UNIVERSITY\DOCUMENTS\CLASSES\AERSP 424\OPENGL\BUILD\_DEPS\GLEW-SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL" "-BC:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build" --check-stamp-file "C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glew-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^C:\USERS\DOMMA\ONEDRIVE - THE PENNSYLVANIA STATE UNIVERSITY\DOCUMENTS\CLASSES\AERSP 424\SHAREDLIBRARY\BUILD\CMAKEFILES\FC0D02F3DA9A81901BD6AB092816702C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/SharedLibrary" "-BC:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/SharedLibrary/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/SharedLibrary/build/shared_lib_example.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
