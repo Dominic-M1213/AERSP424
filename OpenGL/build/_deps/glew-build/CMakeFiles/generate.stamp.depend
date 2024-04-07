@@ -1,6 +1,0 @@
-# CMake generation dependency list for this directory.
-C:/Program Files/CMake/share/cmake-3.28/Modules/FindOpenGL.cmake
-C:/Program Files/CMake/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake
-C:/Program Files/CMake/share/cmake-3.28/Modules/FindPackageMessage.cmake
-C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glew-src/CMakeLists.txt
-C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glew-src/GeneratePkgConfig.cmake

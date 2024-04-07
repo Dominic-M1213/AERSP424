@@ -1,3 +1,0 @@
-C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glew-subbuild/CMakeFiles/glew-populate.dir
-C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glew-subbuild/CMakeFiles/ALL_BUILD.dir
-C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/OpenGL/build/_deps/glew-subbuild/CMakeFiles/ZERO_CHECK.dir
