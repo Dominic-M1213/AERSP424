@@ -1,3 +1,0 @@
-C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/ProjectUsingSharedLibrary/build/CMakeFiles/ProjectUsingSharedLibrary.dir
-C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/ProjectUsingSharedLibrary/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/domma/OneDrive - The Pennsylvania State University/Documents/Classes/AERSP 424/ProjectUsingSharedLibrary/build/CMakeFiles/ZERO_CHECK.dir
