@@ -4,6 +4,7 @@
 # include <iostream>
 # include <string>
 
+// Sensor Class Definition
 class Sensor {
 protected:
     std::string name; // Name of the sensor for printing purposes

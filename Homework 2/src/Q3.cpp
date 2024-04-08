@@ -4,13 +4,14 @@
 void runQ3() {
     std::cout << "Running Q3...\n" << "-----------------------------------------------" << std::endl;
 
-    ATC atc;
-    std::vector<std::thread> threads;
-    const int num_pilots = 10;
+    ATC atc;                            // Declares the ATC class
+    std::vector<std::thread> threads;   // Declares the threads for each pilot
+    const int num_pilots = 10;          // Declares the number of pilots
 
     // Start the timer
     auto start = std::chrono::high_resolution_clock::now();
 
+    // Establishes each thread as a pilot and its operation
     for (int i = 0; i < num_pilots; ++i) {
         threads.emplace_back([&, i] {
             Pilot pilot(i, atc);
@@ -18,6 +19,7 @@ void runQ3() {
         });
     }
 
+    // Joins the threads to beginning operating the pilots
     for (auto& thread : threads) {
         thread.join();
     }
