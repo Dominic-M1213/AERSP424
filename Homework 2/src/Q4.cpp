@@ -1,74 +1,68 @@
 // Q4.cpp
 # include <../src/Q4.h>
 
-double calculateTW(double ws) {
-    double TW = 1 / ws;
-    return TW; // Example: Direct proportion for illustration purposes
+void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
+    glViewport(0, 0, width, height);
 }
-
 void runQ4() {
     std::cout << "Running Q4...\n" << "-----------------------------------------------" << std::endl;
 
-    // Initialize GLFW
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW\n";
-        //return -1;
+        return;
     }
 
-    // Create a windowed mode window and its OpenGL context
-    GLFWwindow* window = glfwCreateWindow(1280, 960, "T/W vs W/S Plot", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(640, 480, "OpenGL Elliptical Lift Distribution Plotting", NULL, NULL);
     if (!window) {
-        glfwTerminate();
         std::cerr << "Failed to create GLFW window\n";
-        //return -1;
-    }
-
-    // Make the window's context current
-    glfwMakeContextCurrent(window);
-
-    // Initialize GLEW
-    glewExperimental = true; // Needed for core profile
-    if (glewInit() != GLEW_OK) {
         glfwTerminate();
+        return;
+    }
+
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+    glfwMakeContextCurrent(window);
+    glewExperimental = GL_TRUE;
+    if (glewInit() != GLEW_OK) {
         std::cerr << "Failed to initialize GLEW\n";
-        //return -1;
+        glfwDestroyWindow(window);
+        glfwTerminate();
+        return;
     }
 
-    // Define the viewport dimensions
-    glViewport(0, 0, 1280, 960);
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
-    // Define the range of W/S values for which we want to plot T/W
-    const double wsStart = 0.1;
-    const double wsEnd = 1.0;
-    const double wsIncrement = 0.1;
-    std::vector<float> graphPoints;
-
-    for (double ws = wsStart; ws <= wsEnd; ws += wsIncrement) {
-        graphPoints.push_back(static_cast<float>(ws));    // x-coordinate (W/S)
-        graphPoints.push_back(static_cast<float>(1/ws + ws)); // y-coordinate (T/W)
-    }
-
-    // Loop until the user closes the window
     while (!glfwWindowShouldClose(window)) {
-        // Render here
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // Draw the points
-        glEnableClientState(GL_VERTEX_ARRAY);
-        glVertexPointer(2, GL_FLOAT, 0, &graphPoints[0]);
-        glDrawArrays(GL_LINE_STRIP, 0, graphPoints.size() / 2);
-        glDisableClientState(GL_VERTEX_ARRAY);
+        double scale = 1.0; // Use this scale for both the width of the wing and the lift distribution
 
-        // Swap front and back buffers
+        // Draw the elliptical lift distribution
+        glBegin(GL_LINE_STRIP);
+        glColor3f(0.0f, 1.0f, 0.0f); // Green color
+        for (double x = -scale; x <= scale; x += 0.01) {
+            double L_prime = sqrt(1 - pow(x / scale, 2)); // Use scale for lift distribution width
+            glVertex2f(x, L_prime);
+        }
+        glEnd();
+
+        // Draw the wing beneath the lift distribution
+        glBegin(GL_LINE_LOOP);
+        glColor3f(1.0f, 1.0f, 1.0f); // White color for the wing
+        for (double x = -scale; x <= scale; x += 0.01) {
+            double y1 = -0.175 * sqrt(1 - pow(x / scale, 2)); // Adjusted for the wing width using the same scale
+            double y2 = 0.1 * sqrt(1 - pow(x / scale, 2));
+            glVertex2f(x, y1);
+            glVertex2f(x, y2);
+        }
+        glEnd();
+
         glfwSwapBuffers(window);
-
-        // Poll for and process events
         glfwPollEvents();
     }
 
     glfwDestroyWindow(window);
     glfwTerminate();
-
 
     std::cout << "\nEnding Q4.\n" << "-----------------------------------------------" << std::endl;
 }

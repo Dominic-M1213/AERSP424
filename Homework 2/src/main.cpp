@@ -8,9 +8,9 @@
 
 int main() {
 
-	//runQ1();
-	//runQ2();
-	//runQ3();
+	runQ1();
+	runQ2();
+	runQ3();
 	runQ4();
 
 	return 0;
