@@ -1,7 +1,7 @@
 # ifndef PRESSURESENSOR_H
 # define PRESSURESENSOR_H
 
-# include <Sensor.h>
+# include <../src/Sensor.h>
 
 class PressureSensor : public Sensor {
 public:

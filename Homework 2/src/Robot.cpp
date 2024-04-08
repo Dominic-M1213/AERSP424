@@ -1,4 +1,4 @@
-# include "Robot.h"
+# include <../src/Robot.h>
 
 Robot::Robot(int id, std::mutex& left_tool, std::mutex& right_tool)
     : id_(id), left_tool_(left_tool), right_tool_(right_tool) {}

@@ -3,7 +3,7 @@
 # define Q2_H
 
 # include <iostream>
-# include "Robot.h"
+# include <../src/Robot.h>
 
 void runQ2();
 

@@ -1,5 +1,5 @@
 // Q2.cpp
-# include "Q2.h"
+# include <../src/Q2.h>
 
 void runQ2() {
     std::cout << "Running Q2...\n" << "-----------------------------------------------" << std::endl;

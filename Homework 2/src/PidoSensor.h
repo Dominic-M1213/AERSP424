@@ -1,11 +1,11 @@
-# ifndef ACCELEROMETER_H
-# define ACCELEROMETER_H
+# ifndef PIDOSENSOR_H
+# define PIDOSENSOR_H
 
-# include "Sensor.h"
+# include <../src/Sensor.h>
 
-class Accelerometer : public Sensor {
+class PidoSensor : public Sensor {
 public:
-    Accelerometer() : Sensor("Accelerometer") {} // Constructor
+    PidoSensor() : Sensor("Pido Tube") {} // Constructor
 
     void gatherData() override {
         std::cout << "Gathering data from " << name << " Sensor." << std::endl;
@@ -16,4 +16,4 @@ public:
     }
 };
 
-#endif // ACCELEROMETER_H
+#endif // PIDOSENSOR_H

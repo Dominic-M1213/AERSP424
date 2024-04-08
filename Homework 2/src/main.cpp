@@ -1,9 +1,9 @@
 # include <iostream>
 
-# include "Q1.h"
-# include "Q2.h"
-# include "Q3.h"
-# include "Q4.h"
+# include <../src/Q1.h>
+# include <../src/Q2.h>
+# include <../src/Q3.h>
+# include <../src/Q4.h>
 
 
 int main() {

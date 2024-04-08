@@ -3,7 +3,7 @@
 
 # include <memory>
 # include <vector>
-# include "Sensor.h"
+# include <../src/Sensor.h>
 
 class AerospaceControlSystem {
 private:

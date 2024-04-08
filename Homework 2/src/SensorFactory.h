@@ -4,8 +4,8 @@
 # include <iostream>
 # include <string>
 # include <memory>
-# include "Sensor.h"
-# include "SensorTypes.h"
+# include <../src/Sensor.h>
+# include <../src/SensorTypes.h>
 
 class SensorFactory {
 
